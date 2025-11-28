@@ -1,0 +1,31 @@
+#This is example of String
+name = "John Doe"
+
+#This is example of integer
+age = "28"
+
+#This is example of list
+skills = ["Python", "SQL", "Power BI"]
+
+#This is example of tuple
+education = ("BSc Computer Science", 2020)
+
+#This is example of dictionary
+contact_details = {
+    "email": "john.doe@example.com",
+    "phone": "+123456789"
+}
+
+#This is example of detaset
+certifications = {"Azure", "AWS", "Azure"} 
+
+
+print("{:<20} {:<15} {:<40}".format("Component", "Data Type", "Example"))
+print("--------------------------------------------------------")
+
+print("{:<20} {:<15} {:<40}".format("Name", str(type(name).__name__), str(name)))
+print("{:<20} {:<15} {:<40}".format("Age", str(type(age).__name__), str(age)))
+print("{:<20} {:<15} {:<40}".format("Skills", str(type(skills).__name__), str(skills)))
+print("{:<20} {:<15} {:<40}".format("Education", str(type(education).__name__), str(education)))
+print("{:<20} {:<15} {:<40}".format("Contact Details", str(type(contact_details).__name__), str(contact_details)))
+print("{:<20} {:<15} {:<40}".format("Certifications", str(type(certifications).__name__), str(certifications)))
