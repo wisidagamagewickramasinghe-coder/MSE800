@@ -26,8 +26,6 @@ def factorial(n):
         result *= i  # multiply result by each number from 1 to n
     return result
 
-
-
 # Part 2
 
 if __name__ == "__main__":
@@ -38,5 +36,3 @@ if __name__ == "__main__":
  
     fact = factorial(n)
     print(f"\nFactorial of", n, "is:", fact)
-    
-    

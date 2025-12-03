@@ -1,0 +1,22 @@
+hourly_rate = float(input("Enter hourly pay rate: "))
+hours_worked = float(input("Enter hours worked: "))
+
+total_pay = hourly_rate * hours_worked
+
+print("Total Pay: $", total_pay)
+
+if 0 <= total_pay <= 15600:
+    tax = total_pay * 10.5
+elif 15601 <= total_pay <= 53500:
+    tax = total_pay * 17.5
+elif 53501 <= total_pay <= 78100:
+    tax = total_pay * 30
+elif 78101 <= total_pay <= 18000:
+    tax = total_pay * 33
+else:
+    tax = 39  # For values not in your ranges
+
+# Print result
+print("Total Pay:", total_pay)
+print("Tax:", tax)
+print("Pay After Tax:", total_pay - tax)
